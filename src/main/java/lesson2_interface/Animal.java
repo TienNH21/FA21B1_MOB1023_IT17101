@@ -1,6 +1,6 @@
 package lesson2_interface;
 
-public class Animal {
+public abstract class Animal {
     private String ten;
     private String mau;
 
@@ -12,9 +12,7 @@ public class Animal {
         this.mau = mau;
     }
     
-    public void tiengKeu() {
-        //
-    }
+    public abstract void tiengKeu();
 
     public String getTen() {
         return ten;

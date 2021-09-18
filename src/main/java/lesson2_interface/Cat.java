@@ -6,4 +6,9 @@ public class Cat
     public void run() {
         System.out.println("Running ...");
     }
+
+    @Override
+    public void tiengKeu() {
+        System.out.println("Meow ...");
+    }
 }

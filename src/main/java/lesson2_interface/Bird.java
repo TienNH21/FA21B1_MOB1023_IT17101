@@ -20,4 +20,8 @@ public class Bird
     public void run() {
         System.out.println("Running slowly ...");
     }
+    @Override
+    public void tiengKeu() {
+        System.out.println("ABC ...");
+    }
 }
