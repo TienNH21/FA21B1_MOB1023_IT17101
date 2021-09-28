@@ -1,6 +1,7 @@
 package lesson4_swing;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import luyen_tap_1.Nguoi;
 import luyen_tap_1.QLDanhSachInterface;
@@ -378,6 +379,8 @@ public class QLSVForm extends javax.swing.JFrame {
 
         // B4: Hiển thị lại dữ liệu trên JTable
         this.hienThiTable();
+
+        JOptionPane.showMessageDialog(this, "Thêm mới thành công");
     }//GEN-LAST:event_btnThemActionPerformed
 
     private void btnSuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuaActionPerformed
@@ -402,10 +405,20 @@ public class QLSVForm extends javax.swing.JFrame {
         SinhVien sv = new SinhVien(maSV, chuyenNganh, hoTen, gioiTinh, queQuan, diaChi);
         this.qlds.sua(row, sv);
         this.hienThiTable();
+        JOptionPane.showMessageDialog(this, "Cập nhật thành công");
     }//GEN-LAST:event_btnSuaActionPerformed
 
     private void btnXoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnXoaActionPerformed
-        // JOptionPane
+        int xacNhan = JOptionPane.showConfirmDialog(this, "Xác nhận xóa bản ghi");
+        
+        if (xacNhan == JOptionPane.YES_OPTION) {
+            //
+        } else if (xacNhan == JOptionPane.NO_OPTION) {
+            return ;
+        } else if (xacNhan == JOptionPane.CANCEL_OPTION) {
+            return ;
+        }
+        
         int row = this.tblSinhVien.getSelectedRow();
         if (row == -1) {
             return ;
@@ -413,6 +426,7 @@ public class QLSVForm extends javax.swing.JFrame {
         
         this.qlds.xoa(row);
         this.hienThiTable();
+        JOptionPane.showMessageDialog(this, "Xóa thành công");
     }//GEN-LAST:event_btnXoaActionPerformed
 
     public void clearForm() {
