@@ -89,6 +89,7 @@ public class QLSVForm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 51, 0));
 
         jPanel1.setBackground(new java.awt.Color(0, 255, 255));
 
