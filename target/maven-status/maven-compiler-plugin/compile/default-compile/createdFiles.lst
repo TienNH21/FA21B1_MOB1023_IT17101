@@ -34,6 +34,7 @@ lesson2_interface/Runable.class
 luyen_tap_1/QLDS_File.class
 lesson1/SinhVien.class
 luyen_tap_1/MainClass.class
+lesson11_character_io/DemoFileIO.class
 lesson6_collection/DemoCollection.class
 lesson4_swing/QLSVForm$4.class
 lesson8_exception/DemoMultiException.class
@@ -43,3 +44,4 @@ lesson10_file_io/DemoObjectIOStream.class
 lesson2_interface/Jumpable.class
 lesson10_file_io/DemoDataIOStream.class
 luyen_tap_1/SinhVien.class
+lesson11_character_io/DemoBufferedIO.class
